@@ -16,6 +16,10 @@ This is a repo for Ginco-One-Platform-Sample.
 
   2.  You need to create `.env` file & fillout these values
 
+      ```bash
+      cp .env.example .env
+      ```
+
       ```txt
       PRIVATE_KEY=""
       GINCO_API_KEY=""
