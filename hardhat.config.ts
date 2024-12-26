@@ -109,6 +109,10 @@ const config: HardhatUserConfig = {
 			url: "https://rpc.chiadochain.net",
 			accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
 		},
+		flowTestnet: {
+			url: "https://testnet.evm.nodes.onflow.org",
+			accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+		},
 	},
 	sourcify: {
 		enabled: true,
