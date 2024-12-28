@@ -9,7 +9,8 @@
     "node": ">=18"
   },
   "scripts": {
-    "format": "npx biome lint --apply . && npx biome lint --write .",
+    "lint": "npx biome check . && solhint 'contracts/**/*.sol'",
+    "format": " npx biome lint --write . && solhint contracts/**/*.sol --fix",
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
