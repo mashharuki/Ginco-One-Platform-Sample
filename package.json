@@ -9,9 +9,11 @@
     "node": ">=18"
   },
   "scripts": {
+    "format": "npx biome lint --apply . && npx biome lint --write .",
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
+    "verify": "npx hardhat ignition verify",
     "coverage": "SOLIDITY_COVERAGE=true npx hardhat coverage",
     "deploy:Lock": "npx hardhat ignition deploy ./ignition/modules/Lock.ts",
     "local": "npx hardhat node",
@@ -22,6 +24,7 @@
     "callWriteMethod": "npx hardhat callWriteMethod"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",

@@ -51,6 +51,12 @@ This is a repo for Ginco-One-Platform-Sample.
     yarn deploy:Lock --network holesky
     ```
 
+  - **verify contract**
+
+    ```bash
+    yarn verify chain-1946
+    ```
+
   - **get chain info**
 
     ```bash
