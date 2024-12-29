@@ -121,15 +121,33 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
+      chiado: "empty",
       minato: "empty",
+      flowTestnet: "empty",
     },
     customChains: [
+      {
+        network: "chiado",
+        chainId: 10200,
+        urls: {
+          apiURL: "https://gnosis-chiado.blockscout.com/api",
+          browserURL: "https://gnosis-chiado.blockscout.com",
+        },
+      },
       {
         network: "minato",
         chainId: 1946,
         urls: {
           apiURL: "https://soneium-minato.blockscout.com/api",
           browserURL: "https://soneium-minato.blockscout.com/",
+        },
+      },
+      {
+        network: "flowTestnet",
+        chainId: 545,
+        urls: {
+          apiURL: "https://evm-testnet.flowscan.io/api",
+          browserURL: "https://evm-testnet.flowscan.io/",
         },
       },
     ],

@@ -84,3 +84,4 @@ This is a repo for Ginco-One-Platform-Sample.
 ### 参考文献
 
 1. [Ginco One Platform Site](https://console.cloud.ginco.com/nodes/api)
+2. [GitHub - Hardhat テンプレートプロジェクト](https://github.com/pcaversaccio/hardhat-project-template-ts/tree/main)
