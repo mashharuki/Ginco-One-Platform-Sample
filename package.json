@@ -9,8 +9,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "lint": "npx biome check . && solhint 'contracts/**/*.sol'",
-    "format": " npx biome lint --write . && solhint contracts/**/*.sol --fix",
+    "format": "npx solhint --fix --noPrompt 'contracts/**/*.sol' && npx biome check --write .",
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
@@ -40,9 +39,13 @@
     "dotenv": "^16.4.5",
     "hardhat": "^2.22.11",
     "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "^5.0.4",
     "solidity-coverage": "^0.8.0",
     "ts-node": ">=8.0.0",
     "typescript": "~5.0.4",
     "viem": "^2.21.55"
+  },
+  "dependencies": {
+    "lefthook": "^1.10.1"
   }
 }
